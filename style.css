@@ -18,7 +18,7 @@ header{
     display: flex;
     justify-content: center;
     align-items:flex-end;
-    font-size: 3em;
+    font-size: 4em;
     font-weight: 600;
     letter-spacing: 3px;
     margin-bottom: 10px;
@@ -28,4 +28,14 @@ header{
     width: 10%;
     background-color: lightskyblue;
     margin: auto;
+    margin-bottom: 70px;
+}
+.review{
+    width: 570px;
+    height: 410px;
+    margin: auto;
+    box-shadow: 5px 10px #d0cbcb;
+    border-style: solid;
+    border-color: #d0cbcb;
+    border-radius: 5px;
 }
