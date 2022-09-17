@@ -38,4 +38,76 @@ header{
     border-style: solid;
     border-color: #d0cbcb;
     border-radius: 5px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.shadow-image{
+    width: 150px;
+    height:150px;
+    background-color: blue;
+    border-radius: 50%;
+    z-index: 1;
+    margin-left: 17px;
+    position: absolute;
+}
+.image {
+    width: 150px;
+    height: 155px;
+    border-radius: 50%;
+    z-index: 2;
+    position: absolute;
+}
+.image img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+.smol{
+    margin-top: 10px;
+    margin-right: 100px;
+    width:8%;
+    height: 11%;
+    font-size: 6em;
+    font-weight: 600;
+    background-color: blue;
+    border-radius: 50%;
+    z-index: 3;
+    position:absolute;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    color: white;
+}
+.profile{
+    margin-top: 15px;
+    height: 150px;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+}
+.name{
+    width: fit-content;
+    height: fit-content;
+    font-size: 1.5em;
+    font-weight: 600;
+    margin-top: 15px;
+    letter-spacing: 4px;
+}
+.job {
+    width: fit-content;
+    height: fit-content;
+    font-size: 1.2em;
+    color: blue;
+    margin-top: 5px;
+}
+.describtion {
+    margin-top: 10px;
+    width: fit-content;
+    height: fit-content;
+    font-size: 1.7em;
+    line-height: 1.4 ;
 }
