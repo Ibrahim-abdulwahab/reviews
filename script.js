@@ -8,37 +8,52 @@ window.addEventListener('load', function(){
     const surprise=document.getElementById("surprise");
     let n=0;
 
-    const nIncrease=()=>{
-        n=n+1;
-        if (n>3){
-            n=0
-        }
+    const nMatch=()=>{
         if (n==0){
             first.className="about"
             second.className="none";
             third.className="none";
             fourth.className="none";
         }
-        else if (n==1){
+        else if (n==1 || n==-3){
             first.className="none"
             second.className="about";
             third.className="none";
             fourth.className="none";
         }
-        else if (n==2){
+        else if (n==2 || n==-2){
             first.className="none"
             second.className="none";
             third.className="about";
             fourth.className="none";
         }
-        else if (n==3){
+        else if (n==3 || n==-1){
             first.className="none"
             second.className="none";
             third.className="none";
             fourth.className="about";
         }
     }
+
+    const nIncrease=()=>{
+        n=n+1;
+        if (n>3){
+            n=0
+        }
+        nMatch()
+    }
     right.addEventListener("click",nIncrease)
+
+    const nDecrease=()=>{
+        n=n-1;
+        if (n<-3){
+            n=0
+        }
+        nMatch()
+    }
+    left.addEventListener("click",nDecrease)
+
+    
 
     
     
