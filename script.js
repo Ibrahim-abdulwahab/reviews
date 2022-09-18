@@ -6,6 +6,7 @@ window.addEventListener('load', function(){
     const left=document.getElementById("left");
     const right=document.getElementById("right");
     const surprise=document.getElementById("surprise");
+    const numbers=[0,1,2,3];
     let n=0;
 
     const nMatch=()=>{
@@ -52,6 +53,13 @@ window.addEventListener('load', function(){
         nMatch()
     }
     left.addEventListener("click",nDecrease)
+
+    const surpriseNumber=()=>{
+        let number=numbers[Math.floor(Math.random()*numbers.length)];
+        n=number;
+        nMatch()
+    }
+    surprise.addEventListener("click",surpriseNumber)
 
     
 
