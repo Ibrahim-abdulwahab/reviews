@@ -45,6 +45,12 @@ header{
     padding-left: 30px;
     padding-right: 30px;
 }
+.about{
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    align-items: center;
+}
 .shadow-image{
     width: 150px;
     height:150px;
@@ -85,7 +91,7 @@ header{
 .profile{
     margin-top: 15px;
     height: 150px;
-    background-color: red;
+    
     display: flex;
     justify-content: center;
 }
@@ -119,6 +125,12 @@ header{
 }
 .left{
     margin-right: 30px;
+}
+.left:hover{
+    cursor: pointer;
+}
+.right{
+    cursor: pointer;
 }
 .review button{
     width: fit-content;
