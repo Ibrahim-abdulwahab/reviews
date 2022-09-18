@@ -32,7 +32,7 @@ header{
 }
 .review{
     width: 570px;
-    height: 410px;
+    height: 420px;
     margin: auto;
     box-shadow: 5px 10px #d0cbcb;
     border-style: solid;
@@ -110,4 +110,30 @@ header{
     height: fit-content;
     font-size: 1.7em;
     line-height: 1.4 ;
+}
+.arrows{
+    margin-top: 10px;
+    display: flex;
+    font-size: 4em;
+    color: aqua;
+}
+.left{
+    margin-right: 30px;
+}
+.review button{
+    width: fit-content;
+    height: fit-content;
+    padding: 4px 8px;
+    border-radius: 5px;
+    color: aqua;
+    border-color: aqua;
+    transition: 1.2s;
+}
+.review button:hover{
+    cursor: pointer;
+    color: white;
+    background-color: aqua;
+}
+.none{
+    display: none;
 }
